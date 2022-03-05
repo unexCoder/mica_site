@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* font-family: -apple-system, Roboto, sans-serif, serif; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-color: #6ADEDC; */
+    /* background-color: #499897; */
+    background-color: #121212;
+}
+
+.main-header {
+    /* background-color: #9EB7FF; */
+    background-color: #121212;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.left-header-container a {
+    text-decoration: none;
+}
+
+.main-title {
+    color: #fff;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.right-header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: 400;
+}
+.main-nav-bar {
+    margin-bottom: 25px;
+    color: #fff;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.main-nav-bar li {
+    margin: 0 5px 0 5px;
+}
+.main-nav-bar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-nav-bar a:hover {
+   color: #499897;
+}
+
+.main-nav-bar a:focus {
+    color: #499897;
+}
+
+.main-footer {
+    margin-top: 20px;
+    background-color: #121212;
+    /* color: #499897; */
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px 5px 0px;
+    height: 60px;
+}
+
+.main-footer a {
+    color: #fff;
+    /* color: #499897; */
+    padding: 1px;
+    text-decoration: none;    
+}
+.main-footer h3 {
+    color: #fff;
+    padding: 10px;
+    font-weight: 400;    
+}
+.main-footer h3 a:hover {
+    color: #499897;
+}
+
+.main-footer p {
+    padding: 2px;
+    font-size: 10px;
+}
+
+/* media */
+@media (max-width: 768px) {
+    
+    .main-header {
+        height: 120px;
+    }
+    
+    .main-nav-bar {
+        flex-direction: column;
+        font-size: 13px;
+        text-align: right;
+        margin-right: 10px;
+    }    
+    
+    .left-header-container {
+        font-size: 13px;
+        margin-bottom: 22px;
+    }
+
+    .main-title {
+        margin-left: 10px;
+    }
+
+    .main-nav-bar li:active {
+        color: #499897;
+    }
+
+    .main-footer {
+        height: 40px;
+        font-size: 10px;
+    }
+}
