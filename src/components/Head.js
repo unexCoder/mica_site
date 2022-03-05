@@ -1,6 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql, useStaticQuery } from 'gatsby';
+import { useLocation } from '@reach/router';
+
 
 export default function Head(props) {
       
@@ -22,6 +24,7 @@ export default function Head(props) {
     const keys = data.site.siteMetadata.keywords
     const description = data.site.siteMetadata.description
     const copy = data.site.siteMetadata.copyright
+    const location = useLocation();
 
     return (
         <div>
@@ -32,7 +35,7 @@ export default function Head(props) {
                 {/* <meta name="keywords" content={keys} /> */}
                 <meta name="description" content={description} />
                 <meta name="author" content={copy} />
-                <link rel='canonical' href={window.location.href} />
+                <link rel='canonical' href={location.href} />
             </Helmet>
         </div>
     )
